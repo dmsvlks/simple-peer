@@ -1,5 +1,5 @@
 /*! simple-peer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
-const debug = require('debug')('simple-peer')
+//const debug = require('debug')('simple-peer')
 const getBrowserRTC = require('get-browser-rtc')
 const randombytes = require('randombytes')
 const stream = require('readable-stream')
@@ -1022,9 +1022,9 @@ class Peer extends stream.Duplex {
   }
 
   _debug () {
-    const args = [].slice.call(arguments)
-    args[0] = '[' + this._id + '] ' + args[0]
-    debug.apply(null, args)
+    // const args = [].slice.call(arguments)
+    // args[0] = '[' + this._id + '] ' + args[0]
+    // debug.apply(null, args)
   }
 }
 
